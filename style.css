@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .side-panel {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    background-color: #694BAF;
+    overflow-x: hidden;
+    transition: width 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .side-panel.expanded {
+    width: 200px;
+  }
+  
+  .toggle-btn {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+  }
+  
+  .tabs {
+    margin-top: 100px;
+  }
+  
+  .tab {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .tab:hover {
+    background-color: #5b48a0;
+  }
+  
+  .tab .icon {
+    margin-right: 10px;
+    font-size: 24px;
+    width: 24px;
+  }
+  
+  .tab .text {
+    display: none;
+  }
+  
+  .side-panel.expanded .tab .text {
+    display: inline-block;
+  }
+  
+  .logout-tab {
+    margin-bottom: 20px;
+  }
+  
+  .content {
+    margin-left: 60px;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+  }
+  
+  .side-panel.expanded + .content {
+    margin-left: 200px;
+  }
+  .flexbox-container{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+
+
+  }
+  .flexbox-item{
+    width: 500px;
+    margin: 10px;
+    border:1px solid #EEF2F5;
+    border-radius: 10px;
+    background-color: #EEF2F5;
+
+  }
+  .flexbox-item-1{
+    min-height: 200px;
+  }
+  .flexbox-item-2{
+    min-height: 300px;
+  }
+  .flexbox-item-3{
+    min-height: 500px;
+  }
+  /* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Search bar and button styles */
+.search-container {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.search-bar {
+  padding: 8px;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+}
+
+.search-btn {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+/* Content Header styles */
+.content-header {
+  display: flex;
+  justify-content: space-between; /* Positions items at opposite ends */
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.content-header h1 {
+  margin: 0; /* Removes default margin */
+  font-size: 24px; /* Adjust font size as needed */
+}
+
+/* Specific styles for the timeframe tab */
+.timeframe-tab {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit; /* Keeps the text color consistent */
+}
+
+.timeframe-tab .icon {
+  margin-right: 8px; /* Adjusts spacing between the icon and text */
+}
+
+.timeframe-tab .text {
+  font-size: 16px; /* Adjust font size as needed */
+}
+

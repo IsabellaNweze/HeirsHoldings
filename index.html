@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Dashboard UI</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/179a063602.js" crossorigin="anonymous"></script> 
+    
+</head>
+<body>
+    <div class="side-panel" >
+        <button class="toggle-btn" onclick="togglePanel()">&#9776;</button>
+        <div class="tabs">
+
+          <!-- <div class="top-icon">
+            <a href="#" class="tab">
+                <span class="icon"><img src="images\codesandbox.png" alt="top icon"></span>
+                <span class="text"><h3">ProManage</h3></span>
+            </a>
+        </div> -->
+
+          <a href="#" class="tab">
+            <span class="icon"><img src="images\grid (2).png" alt="grid"></span>
+            <span class="text">Dashboard</span>
+          </a>
+          <a href="#" class="tab">
+            <span class="icon"><img src="images\layout.png" alt="layout"></span>
+            <span class="text">Board</span>
+          </a>
+          <a href="#" class="tab">
+            <span class="icon"><img src="images\database (1).png" alt="database"></span>
+            <span class="text">Analytics</span>
+          </a>
+          <a href="#" class="tab">
+            <span class="icon"><img src="images\settings (2).png" alt="setings"></span>
+            <span class="text">Settings</span>
+          </a>
+        </div>
+        <div class="logout-tab">
+            <a href="#" class="tab">
+              <span class="icon">🔓</span>
+              <span class="text">Logout</span>
+            </a>
+          </div>
+      </div>
+    
+      <div class="content">
+        <div class="header">
+            <div class="search-container">
+                <input type="text" placeholder="Search" class="search-bar">
+                <button class="search-btn"><i class="fa-solid fa-search"></i></button>
+            </div>
+            <div >
+                <i class="fa-solid fa-bell"></i>
+                <i class="fa-solid fa-question"></i>
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </div>
+    
+        <div class="content-header">
+          <h1>Board</h1>
+          <a href="#" class="timeframe-tab">
+            <span class="text">This week</span>
+              <span class="icon"><img src="images/Vector 14.png" alt="drop down"></span>
+             
+          </a>
+      </div>
+      
+        <div class = "flexbox-container">
+            <div class="flexbox-item flexbox-item-1"> </div>
+            <div class="flexbox-item flexbox-item-2"> </div>
+            <div class="flexbox-item flexbox-item-3"> </div>
+
+        </div>
+        
+      </div>
+    
+
+
+
+    <script src ="script.js"></script> 
+      
+</body>
+</html>
