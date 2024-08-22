@@ -181,13 +181,14 @@ body {
 }
 
 .boxinflexbox{
-  width: 300px;
-    margin: 10px;
+  width: 320px;
+  /* margin: 10px auto; */
+  margin: 0 auto 10px auto;
     border:2px solid  #FFFFFF;
     border-radius: 10px;
     background-color: #FFFFFF;
-    align-items: center;
-   margin-top: 2px;
+     /* align-items: center;  */
+    
 
 
 }
