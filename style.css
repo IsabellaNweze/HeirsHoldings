@@ -11,7 +11,7 @@ body {
     top: 0;
     width: 60px;
     height: 100%;
-    background-color: #694BAF;
+    background-color: #EEF2F5;
     overflow-x: hidden;
     transition: width 0.3s ease;
     display: flex;
@@ -31,7 +31,7 @@ body {
     cursor: pointer;
     background: none;
     border: none;
-    color: white;
+    color: #6A6A6A;
   }
   
   .tabs {
@@ -41,14 +41,14 @@ body {
   .tab {
     display: flex;
     align-items: center;
-    color: white;
+    color:#6A6A6A;
     padding: 10px;
     text-decoration: none;
     font-size: 16px;
   }
   
   .tab:hover {
-    background-color: #5b48a0;
+    background-color: #4391ED;
   }
   
   .tab .icon {
@@ -128,8 +128,8 @@ body {
 .search-bar {
   padding: 8px;
   border-radius: 4px 0 0 4px;
-  border: 1px solid #ccc;
-  width: 100%;
+  border: 0px solid #ccc;
+  width: 94%;
   max-width: none;
   box-sizing: border-box;
 }
@@ -181,14 +181,65 @@ body {
 }
 
 .boxinflexbox{
-  width: 320px;
-  /* margin: 10px auto; */
-  margin: 0 auto 10px auto;
+  width: 85%;
+  max-width: 320px;
+   margin: 10px auto; 
+  /* margin: 0 auto 10px auto; */
     border:2px solid  #FFFFFF;
     border-radius: 10px;
     background-color: #FFFFFF;
-     /* align-items: center;  */
+    box-sizing: border-box ;
+      /* align-items: center;   */
     
+}
+.overlap {
+  display: inline-block; 
+}
 
+.overlap span {
+  position: relative;
+  margin-left: -10px; /* Adjust this value to control the overlap */
+}
+
+.overlap span:first-child {
+  margin-left: 0; /* Removes the negative margin from the first icon */
+}
+
+.decorate:hover .text,
+.decorate:hover .icon img {
+ font-weight: bolder;
+  color: #5b48a0; /* Change text color */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.iconstyles {
+  display: flex;
+  gap: 20px; /* Adjust the spacing between icons */
+  align-items: center; /* Vertically centers the icons */
+}
+
+.iconstyles i {
+  cursor: pointer; /* Makes the icons clickable */
+  font-size: 20px; /* Adjust the size of the icons if needed */
+  color: #000000; 
+}
+
+.iconstyles i:hover {
+  color: #5b48a0; /* Change color on hover */
+  font-size: 25px;
 
 }
+.iconstyles img {
+  width: 24px; /* Adjust the size of the user icon image */
+  height: 24px; /* Ensure the image maintains aspect ratio */
+}
+.iconstyles img:hover {
+  width:28px;
+  height: 28px;
+}
+.logout-tab .icon img {
+  width: 28px; /* Adjust size as needed */
+  height: auto;
+  filter: grayscale(100%); /* Ensure the icon is grey */
+}
+
